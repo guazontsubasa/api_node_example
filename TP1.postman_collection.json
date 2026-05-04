@@ -1,240 +1,240 @@
-{
-	"info": {
-		"_postman_id": "15631f8f-dffe-4dc3-9998-72a14e01bad5",
-		"name": "TP1",
-		"description": "Trabajo Práctico 1\n\nEl Trabajo Final del curso estará separado en etapas. De esta manera, habrá  \nposibilidad de practicar y agregar funcionalidad de a poco a nuestra API final.  \nTrabajo Práctico N° 1: Estructura básica de un proyecto en NodeJS utilizando  \nExpress. Planteo de rutas simulando funcionamiento.  \nTrabajo Práctico N° 2: Agregar modelos de base de datos con Sequelize y darle  \nfuncionalidad a las rutas.  \nTrabajo Final: Agregar JWT al proyecto\n\nEnunciado\n\nEn esta primera etapa deberá plantear las bases de una API. Para esto será  \nnecesario utilizar lo aprendido en los Módulos 1, 2 y 3.\n\n1. Crear una API REST utilizando NodeJS manteniendo la estructura vista en el  \n    curso\n    \n2. Recuerde instalar NodeJS y Express.\n    \n3. Su API deberá contar con al menos 3 rutas diferentes\n    \n4. Por ejemplo, si simulamos el funcionamiento de un hospital, podríamos  \n    tener: paciente, médico y tratamiento.\n    \n5. /pacientes , /medicos , /tratamientos\n    \n\n2\n\n1. Las rutas que realice en esta primera etapa, deberán “simular” el  \n    funcionamiento de lo que hará el endpoint, simplemente devolviendo un  \n    mensaje.\n    \n2. GET /medicos → solo devolverá un mensaje diciendo “Listado de  \n    medicos”\n    \n3. GET /pacientes/1 → solo devolverá un mensaje diciendo “Información  \n    del paciente 1”\n    \n4. Por ejemplo, podría hacer:\n    \n5. Listar información de todos\n    \n6. Listar información de uno\n    \n7. Crear",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "2732242"
-	},
-	"item": [
-		{
-			"name": "Usuarios",
-			"item": [
-				{
-					"name": "usuariosListar",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/usuarios",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"usuarios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "usuariosInfo",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/usuarios/1",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"usuarios",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "usuariosCrear",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/usuarios/",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"usuarios",
-								""
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Pacientes",
-			"item": [
-				{
-					"name": "pacientesListar",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/pacientes",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"pacientes"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "pacientesInfo",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/pacientes/1",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"pacientes",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "pacientesCrear",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/pacientes",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"pacientes"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Medicos",
-			"item": [
-				{
-					"name": "medicosListar",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/usuarios",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"usuarios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "medicosInfo",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/medicos/1",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"medicos",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "medicosCrear",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/medicos",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"medicos"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Tratamientos",
-			"item": [
-				{
-					"name": "tratamientosListar",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/tratamientos",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"tratamientos"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "tratamientosInfo",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/tratamientos/1",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"tratamientos",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "tratamientosCrear",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{URL}}/tratamientos",
-							"host": [
-								"{{URL}}"
-							],
-							"path": [
-								"tratamientos"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-	]
-}
+// {
+// 	"info": {
+// 		"_postman_id": "15631f8f-dffe-4dc3-9998-72a14e01bad5",
+// 		"name": "TP1",
+// 		"description": "Trabajo Práctico 1\n\nEl Trabajo Final del curso estará separado en etapas. De esta manera, habrá  \nposibilidad de practicar y agregar funcionalidad de a poco a nuestra API final.  \nTrabajo Práctico N° 1: Estructura básica de un proyecto en NodeJS utilizando  \nExpress. Planteo de rutas simulando funcionamiento.  \nTrabajo Práctico N° 2: Agregar modelos de base de datos con Sequelize y darle  \nfuncionalidad a las rutas.  \nTrabajo Final: Agregar JWT al proyecto\n\nEnunciado\n\nEn esta primera etapa deberá plantear las bases de una API. Para esto será  \nnecesario utilizar lo aprendido en los Módulos 1, 2 y 3.\n\n1. Crear una API REST utilizando NodeJS manteniendo la estructura vista en el  \n    curso\n    \n2. Recuerde instalar NodeJS y Express.\n    \n3. Su API deberá contar con al menos 3 rutas diferentes\n    \n4. Por ejemplo, si simulamos el funcionamiento de un hospital, podríamos  \n    tener: paciente, médico y tratamiento.\n    \n5. /pacientes , /medicos , /tratamientos\n    \n\n2\n\n1. Las rutas que realice en esta primera etapa, deberán “simular” el  \n    funcionamiento de lo que hará el endpoint, simplemente devolviendo un  \n    mensaje.\n    \n2. GET /medicos → solo devolverá un mensaje diciendo “Listado de  \n    medicos”\n    \n3. GET /pacientes/1 → solo devolverá un mensaje diciendo “Información  \n    del paciente 1”\n    \n4. Por ejemplo, podría hacer:\n    \n5. Listar información de todos\n    \n6. Listar información de uno\n    \n7. Crear",
+// 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+// 		"_exporter_id": "2732242"
+// 	},
+// 	"item": [
+// 		{
+// 			"name": "Usuarios",
+// 			"item": [
+// 				{
+// 					"name": "usuariosListar",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/usuarios",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"usuarios"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "usuariosInfo",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/usuarios/1",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"usuarios",
+// 								"1"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "usuariosCrear",
+// 					"request": {
+// 						"method": "POST",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/usuarios/",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"usuarios",
+// 								""
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				}
+// 			]
+// 		},
+// 		{
+// 			"name": "Pacientes",
+// 			"item": [
+// 				{
+// 					"name": "pacientesListar",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/pacientes",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"pacientes"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "pacientesInfo",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/pacientes/1",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"pacientes",
+// 								"1"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "pacientesCrear",
+// 					"request": {
+// 						"method": "POST",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/pacientes",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"pacientes"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				}
+// 			]
+// 		},
+// 		{
+// 			"name": "Medicos",
+// 			"item": [
+// 				{
+// 					"name": "medicosListar",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/usuarios",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"usuarios"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "medicosInfo",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/medicos/1",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"medicos",
+// 								"1"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "medicosCrear",
+// 					"request": {
+// 						"method": "POST",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/medicos",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"medicos"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				}
+// 			]
+// 		},
+// 		{
+// 			"name": "Tratamientos",
+// 			"item": [
+// 				{
+// 					"name": "tratamientosListar",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/tratamientos",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"tratamientos"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "tratamientosInfo",
+// 					"request": {
+// 						"method": "GET",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/tratamientos/1",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"tratamientos",
+// 								"1"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				},
+// 				{
+// 					"name": "tratamientosCrear",
+// 					"request": {
+// 						"method": "POST",
+// 						"header": [],
+// 						"url": {
+// 							"raw": "{{URL}}/tratamientos",
+// 							"host": [
+// 								"{{URL}}"
+// 							],
+// 							"path": [
+// 								"tratamientos"
+// 							]
+// 						}
+// 					},
+// 					"response": []
+// 				}
+// 			]
+// 		}
+// 	]
+// }

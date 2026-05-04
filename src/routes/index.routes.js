@@ -2,15 +2,19 @@
 
 const { Router } = require("express") // importar express
 
-const usuarioRoutes = require("./usuario.routes") // importar el archivo de rutas de usuarios
-
 const rutas_init = () => { // aca se ponen todas las rutas que existen
   const router = Router() // crear una instancia de express.Router()
 
-  router.use("/usuarios", usuarioRoutes) // para acceder a las rutas de usuarios de la api siempre deberá empezar con /usuarios
-  router.use("/pacientes", require("./paciente.routes")) // para acceder a las rutas de pacientes de la api siempre deberá empezar con /pacientes
-  router.use("/medicos", require("./medico.routes")) // para acceder a las rutas de medicos de la api siempre deberá empezar con /medicos
-  router.use("/tratamientos", require("./tratamiento.routes")) // para acceder a las rutas de tratamientos de la api siempre deberá empezar con /tratamientos
+  router.use("/usuarios", require("./usuario.routes")) // para acceder a las rutas de usuarios de la api siempre deberá empezar con /usuarios
+  router.use("/perfiles", require("./perfil.routes")) 
+  router.use("/ingresos", require("./ingreso.routes")) 
+  router.use("/gastos", require("./gasto.routes")) 
+  router.use("/origenes", require("./origen.routes")) 
+  router.use("/destinos", require("./destino.routes")) 
+  router.use("/categorias", require("./categoria.routes"))
+  router.use("/formas_pago", require("./forma_pago.routes"))
+  router.use("/reportes", require("./reporte.routes"))
+  router.use("/bancos", require("./banco.routes"))
 
   return router // retornar el router
 };
