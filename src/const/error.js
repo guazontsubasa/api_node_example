@@ -42,5 +42,20 @@ module.exports = {
     'CredencialesInvalidas': {
         code: 1010,
         message: 'Credenciales inválidas'
+    },
+
+    'DecodeError': {
+        code: 1011,
+        message: 'Error al decodificar el token'
+    },
+
+    'SesionExpirada': {
+        code: 1011,
+        message: 'Sesión expirada'
+    },
+
+    'UsuarioNoAutorizado': {  
+        code: 1012,
+        message: 'Usuario no autorizado'
     }
 }

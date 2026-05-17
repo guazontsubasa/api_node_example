@@ -6,7 +6,7 @@ module.exports = function(usuario) { // recibe el Usuario por parámetro
     if (usuario){
 
         const token = JWT.sign(
-            { id: usuario.idUsuario },  
+            { idUsuario: usuario.idUsuario },  
             globalConst.JWT_SECRET,
             { expiresIn: globalConst.JWT_EXPIRES_IN } // 24 horas
         );
