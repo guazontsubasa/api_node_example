@@ -4,42 +4,32 @@ const errors = require('../../const/error')
 
 module.exports = (sequelize, DataTypes) => {
 
-    let Usuario = sequelize.define('Usuario', {
-        idUsuario: {
+    let Archivo = sequelize.define('Archivo', {
+        idArchivo: {
             type: DataTypes.BIGINT,
             primaryKey: true,
             autoIncrement: true
         },
-        username: {
-            type: DataTypes.STRING,
-            validate: {
-                len: [3, 20],
-                is: /^[a-zA-Z0-9_]+$/i
-            },
-            allowNull: false,
-            unique: true
-        },
-        email: {
-            type: DataTypes.STRING,
-            validate: {
-                isEmail: true
-            },
-            allowNull: false,
-            unique: true
-        },
-        password: {
+        // lo usa multer 
+        nombre: { 
             type: DataTypes.STRING,
             allowNull: false
         },
-        idPerfil: {
-            type: DataTypes.BIGINT,
-            allowNull: false,
-            validate: {
-                min: 1,
-                max: 2
-            },
-            defaultValue: 2 // perfil de usuario
+        // lo usa multer 
+        file: { 
+            type: DataTypes.STRING,
+            allowNull: false
         },
+        // lo usa multer
+        originalName: { 
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        idUsuario: {
+            type: DataTypes.BIGINT,
+            allowNull: false
+        },
+        
         createdAt: {
             type: DataTypes.DATE,
             field: 'created_at',
@@ -59,21 +49,17 @@ module.exports = (sequelize, DataTypes) => {
         }
 
     }, {
-        tableName: 'usuarios',
+        tableName: 'archivos',
         paranoid: true,
         freezeTableName: true
     })
     
-    Usuario.associate = models => {
-        Usuario.belongsTo(models.Perfil, {
-            foreignKey: 'idPerfil',
-            as: 'perfil'
-        })
-        Usuario.hasMany(models.Archivo, {
+    Archivo.associate = models => {
+        Archivo.belongsTo(models.Usuario, {
             foreignKey: 'idUsuario',
-            as: 'archivos'
+            as: 'usuario'
         })
     }
     
-    return Usuario;
+    return Archivo;
 }
