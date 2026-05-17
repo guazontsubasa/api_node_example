@@ -12,9 +12,9 @@ Crear un archivo `.env` en la raíz del proyecto:
 PORT = 8000
 DB_HOST = localhost
 DB_PORT = 5432
-DB_NAME = curso_node
+DB_NAME = curso_db
 DB_USER = curso_user
-DB_PASSWORD = claveDB1234.
+DB_PASSWORD = curso_pass
 ```
 
 ## Instalación y ejecución

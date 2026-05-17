@@ -1,0 +1,1552 @@
+{
+	"info": {
+		"_postman_id": "15631f8f-dffe-4dc3-9998-72a14e01bad5",
+		"name": "CURSO NODE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2732242"
+	},
+	"item": [
+		{
+			"name": "TP1 - deprecated",
+			"item": [
+				{
+					"name": "Usuarios",
+					"item": [
+						{
+							"name": "usuariosListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/usuarios",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "usuariosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/usuarios/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "usuariosCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/usuarios/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Pacientes",
+					"item": [
+						{
+							"name": "pacientesListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/pacientes",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"pacientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pacientesInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/pacientes/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"pacientes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pacientesCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/pacientes",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"pacientes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Medicos",
+					"item": [
+						{
+							"name": "medicosListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/medicos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"medicos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "medicosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/medicos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"medicos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "medicosCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/medicos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"medicos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tratamientos",
+					"item": [
+						{
+							"name": "tratamientosListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/tratamientos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"tratamientos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tratamientosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/tratamientos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"tratamientos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tratamientosCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/tratamientos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"tratamientos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "Trabajo Práctico 1\n\nEl Trabajo Final del curso estará separado en etapas. De esta manera, habrá  \nposibilidad de practicar y agregar funcionalidad de a poco a nuestra API final.  \nTrabajo Práctico N° 1: Estructura básica de un proyecto en NodeJS utilizando  \nExpress. Planteo de rutas simulando funcionamiento.  \nTrabajo Práctico N° 2: Agregar modelos de base de datos con Sequelize y darle  \nfuncionalidad a las rutas.  \nTrabajo Final: Agregar JWT al proyecto\n\nEnunciado\n\nEn esta primera etapa deberá plantear las bases de una API. Para esto será  \nnecesario utilizar lo aprendido en los Módulos 1, 2 y 3.\n\n1. Crear una API REST utilizando NodeJS manteniendo la estructura vista en el  \n    curso\n    \n2. Recuerde instalar NodeJS y Express.\n    \n3. Su API deberá contar con al menos 3 rutas diferentes\n    \n4. Por ejemplo, si simulamos el funcionamiento de un hospital, podríamos  \n    tener: paciente, médico y tratamiento.\n    \n5. /pacientes , /medicos , /tratamientos\n    \n\n2\n\n1. Las rutas que realice en esta primera etapa, deberán “simular” el  \n    funcionamiento de lo que hará el endpoint, simplemente devolviendo un  \n    mensaje.\n    \n2. GET /medicos → solo devolverá un mensaje diciendo “Listado de  \n    medicos”\n    \n3. GET /pacientes/1 → solo devolverá un mensaje diciendo “Información  \n    del paciente 1”\n    \n4. Por ejemplo, podría hacer:\n    \n5. Listar información de todos\n    \n6. Listar información de uno\n    \n7. Crear"
+		},
+		{
+			"name": "TP2",
+			"item": [
+				{
+					"name": "Usuario",
+					"item": [
+						{
+							"name": "usuariosCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"user4\",\n    \"email\": \"leandropocaixxx@gmail.com\",\n    \"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/usuarios/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "usuariosBorrar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"guachon\",\n    \"email\": \"leandropocai@gmail.com\",\n    \"password\": \"sgdes\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/usuarios/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "usuariosListar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/usuarios",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "usuariosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/usuarios/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "usuariosModificar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"user4\",\n    \"email\": \"leandropocai@gmail.com\",\n    \"password\": \"abcdef\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/usuarios/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Perfil",
+					"item": [
+						{
+							"name": "perfilesListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/perfiles",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"perfiles"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Categorias",
+					"item": [
+						{
+							"name": "categoriasListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/categorias",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"categorias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categoriasInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/categorias/12",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"categorias",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categoriasCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Impuestos2\",\n    \"tipo\": \"gasto\"   \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/categorias",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"categorias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categoriasCrear Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Otros impuestos\",\n    \"tipo\": \"gasto\"   \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/categorias/14",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"categorias",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categoriasToggleActive",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/categorias/14/toggle",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"categorias",
+										"14",
+										"toggle"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categoriasDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/categorias/14",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"categorias",
+										"14"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ingresos",
+					"item": [
+						{
+							"name": "ingresosListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/ingresos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"ingresos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ingresosCrear",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"var moment = require('moment');",
+											"pm.environment.set('currentdate', moment().format('YYYY-MM-DD'));"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fecha\": \"2026-03-01\",\n    \"idUsuario\": 1,\n    \"idOrigen\": 1,\n    \"monto\": 900,\n    \"descripcion\": \"texto opcional\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/ingresos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"ingresos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ingresosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/ingresos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"ingresos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ingresosModificar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"monto\": 800\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/ingresos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"ingresos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ingresosMarcarCobrado",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/ingresos/1/cobro",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"ingresos",
+										"1",
+										"cobro"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ingresosEliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/ingresos/2",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"ingresos",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Gastos",
+					"item": [
+						{
+							"name": "gastosListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/gastos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idUsuario\": 1,\n    \"monto\": 250000,\n    \"fecha\": \"2026-03-20\",\n    \"idDestino\": 1,\n    \"idFormaPago\": 2,\n    \"idTarjeta\": 1\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/gastos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/gastos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosMensuales",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/gastos/gastos-mensuales",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos",
+										"gastos-mensuales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosDelMes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/gastos/gastos-mensuales/2026/03",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos",
+										"gastos-mensuales",
+										"2026",
+										"03"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosPendientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/gastos/gastos-pendientes",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos",
+										"gastos-pendientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosModificar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fechaVencimiento\": \"2026-03-30\"\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/gastos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosEliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/gastos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gastosPagar",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/gastos/2/pagar",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"gastos",
+										"2",
+										"pagar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Origenes",
+					"item": [
+						{
+							"name": "origenesListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/origenes",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"origenes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "origenesCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Senasa\",\n    \"idCategoria\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/origenes",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"origenes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "origenesInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/origenes/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"origenes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "origenesModificar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Senasa\",\n    \"idCategoria\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/origenes/4",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"origenes",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "origenesEliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/origenes/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"origenes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "origenesToggleActive",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/origenes/4/toggle",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"origenes",
+										"4",
+										"toggle"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Destinos",
+					"item": [
+						{
+							"name": "destinosListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/destinos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"destinos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "destinosCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"prueba\",\n    \"idCategoria\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/destinos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"destinos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "destinosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/destinos/23",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"destinos",
+										"23"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "destinosModificar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"prueba edit\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/destinos/23",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"destinos",
+										"23"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "destinosEliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/destinos/23",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"destinos",
+										"23"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "destinosToggleActive",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/destinos/20/toggle",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"destinos",
+										"20",
+										"toggle"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Formas Pago",
+					"item": [
+						{
+							"name": "formasPagoListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/formas_pago",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"formas_pago"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "formasPagoToggleActive",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/formas_pago/1/toggle",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"formas_pago",
+										"1",
+										"toggle"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reportes",
+					"item": [
+						{
+							"name": "reportesListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/reportes",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"reportes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bancos",
+					"item": [
+						{
+							"name": "bancosListar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/bancos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"bancos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bancosCrear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idUsuario\": 1,\n    \"nombre\": \"Prueba bank\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/bancos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"bancos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bancosInfo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/bancos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"bancos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bancosModificar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idUsuario\": 1,\n    \"nombre\": \"Prueba2 bank\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/bancos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"bancos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bancosEliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/bancos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"bancos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bancosToggleActive",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/bancos/2/toggle",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"bancos",
+										"2",
+										"toggle"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "Trabajo Práctico 2\n\nEl Trabajo Final del curso estará separado en etapas. De esta manera, habrá  \nposibilidad de practicar y agregar funcionalidad de a poco a nuestra API final.  \nTrabajo Práctico N° 1: Estructura básica de un proyecto en NodeJS utilizando  \nExpress. Planteo de rutas simulando funcionamiento.  \nTrabajo Práctico N° 2: Agregar modelos de base de datos con Sequelize y darle  \nfuncionalidad a las rutas.  \nTrabajo Final: Agregar JWT al proyecto\n\nEnunciado  \nEn esta segunda etapa deberá agregarle funcionalidad a nuestra API. Para esto será  \nnecesario utilizar lo aprendido en los Módulos 4 y 5.\n\n1. Utilizando la API que comenzamos a hacer en el Trabajo Práctico 1:\n    \n2. Agregar los modelos correspondientes de acuerdo a lo que pensó. (si  \n    necesita modificar o cambiar la idea, no hay problema!)\n    \n3. Darle funcionalidad a los endpoints (en el TP1 solo mostrábamos un  \n    mensaje, ahora deberá hacer uso de la base de datos).\n    \n4. Al menos tener una asociación entre dos tablas y tener un endpoint que  \n    muestre esta información.\n    \n5. Realizar un manejo básico de errores (por ejemplo chequear que exista un  \n    usuario del que se quiera mostrar info, verificar la información que se recibe\n    \n\n2\n\npor el body, etc)\n\n1. Cargar la base de datos con información de prueba utilizando Seeders (para  \n    cada uno de los modelos que haya hecho).\n    \n\nDeberá subir el proyecto a GitHub (o actualizar el que ya hizo en el TP 1) y enviar el  \nlink al repositorio por mail: [julietalanciotti@cpciba.org.ar](https://mailto:julietalanciotti@cpciba.org.ar)"
+		},
+		{
+			"name": "TP3",
+			"item": [
+				{
+					"name": "Files",
+					"item": [
+						{
+							"name": "subirArchivo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "jpg",
+											"type": "file",
+											"src": "/home/guachon/Pictures/maite ai/3.jpeg"
+										},
+										{
+											"key": "idUsuario",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "nombre",
+											"value": "archivo_1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{URL}}/usuarios/archivos/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"archivos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descargarArchivo",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idUsuario\": 1,\n    \"nombre\": \"archivo_1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/usuarios/archivos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"archivos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteArchivo",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idUsuario\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/usuarios/archivos/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"archivos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "listarArchivos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idUsuario\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/usuarios/archivos",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"usuarios",
+										"archivos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"// Obtiene la respuesta de la solicitud en formato JSON",
+											"const jsonData = pm.response.json();",
+											"",
+											"// Extrae el token (asegúrate de cambiar 'token' por la clave exacta que devuelve tu API)",
+											"const token = jsonData.data.token; ",
+											"",
+											"// Guarda el token en la variable de entorno 'jwt_token'",
+											"pm.environment.set(\"token\", token);"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"leandro@prueba.com\",\n    \"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/login",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Registrarse",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"rene\",\n    \"email\": \"leandro@prueba2.com\",\n    \"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/register",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
