@@ -19,4 +19,12 @@ const rutas_init = () => { // aca se ponen todas las rutas que existen
   return router // retornar el router
 };
 
-module.exports = { rutas_init } // exportar el archivo de rutas de la api
+const rutas_auth = () => { // aca se ponen las rutas de autenticación
+  const router = Router() // crear una instancia de express.Router()
+
+  router.use("/auth", require("./auth.routes")) // para acceder a las rutas de autenticación de la api siempre deberá empezar con /auth
+
+  return router // retornar el router
+}
+
+module.exports = { rutas_init, rutas_auth } // exportar el archivo de rutas de la api

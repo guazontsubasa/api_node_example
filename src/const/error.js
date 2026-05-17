@@ -37,5 +37,10 @@ module.exports = {
     'DestinoConGastosAsociados': {
         code: 1006,
         message: 'No se puede eliminar el destino porque tiene gastos asociados'
+    },
+
+    'CredencialesInvalidas': {
+        code: 1010,
+        message: 'Credenciales inválidas'
     }
 }

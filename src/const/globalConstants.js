@@ -10,5 +10,7 @@ module.exports = {
     DB_USER: process.env.DB_USER, 
     DB_PASSWORD: process.env.DB_PASSWORD, 
     ENVIRONMENT: process.env.ENVIRONMENT || 'development',
-    MAX_FILE_SIZE: 5 * 1024 * 1024 // tamaño máximo de los archivos en bytes (5MB) 
+    MAX_FILE_SIZE: 5 * 1024 * 1024, // tamaño máximo de los archivos en bytes (5MB)
+    JWT_SECRET: process.env.JWT_SECRET, // clave secreta para firmar los tokens JWT
+    JWT_EXPIRES_IN: '3000m' // tiempo de expiración de los tokens JWT (24 horas)
 }
